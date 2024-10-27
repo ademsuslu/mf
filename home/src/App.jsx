@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
     <Header />
-    <div className="space-y-3 h-screen">Home page content</div>
+    <div className="space-y-3 h-screen">Home page content welcome</div>
     <Footer />
   </div>
 )
