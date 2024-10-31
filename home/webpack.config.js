@@ -68,6 +68,7 @@ module.exports = (_, argv) => ({
       exposes: {
         './Header': './src/components/Header.jsx',
         './Footer': './src/components/Footer.jsx',
+        './products': './src/products.js',
       },
       shared: {
         ...deps,

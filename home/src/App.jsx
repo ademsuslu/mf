@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom/client'
 import './index.scss'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import HomeContent from './components/HomeContent'
 
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
     <Header />
-    <div className="space-y-3 h-screen">Home page content welcome</div>
+    <div className="space-y-3 h-screen">
+      <HomeContent />
+    </div>
     <Footer />
   </div>
 )
