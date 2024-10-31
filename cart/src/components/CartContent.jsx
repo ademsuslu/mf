@@ -7,5 +7,9 @@ export default function CartContent() {
     login('sally', '123')
     return jwt.subscribe((val) => setToken(val ?? ''))
   }, [])
-  return <div>JWT: {token}</div>
+  return (
+    <div className="max-w-[200px]">
+      JWT: <p>{token}</p>
+    </div>
+  )
 }
