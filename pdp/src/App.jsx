@@ -6,16 +6,21 @@ import './index.scss'
 import Header from 'home/Header'
 import Footer from 'home/Footer'
 import PDPContent from './components/PDPContent'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="text-3xl mx-auto max-w-6xl">
-      <Header />
-      <div className="space-y-3 h-screen">
-        <PDPContent />
+    <Router>
+      <div className="flex flex-col justify-between space-y-4 text-3xl mx-auto max-w-6xl">
+        <Header />
+        <div className="space-y-3 flex-grow">
+          <Routes>
+            <Route path="/products/:id" element={<PDPContent />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   )
 }
 const rootElement = document.getElementById('app')

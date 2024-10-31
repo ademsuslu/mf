@@ -7,9 +7,9 @@ import Footer from './components/Footer'
 import HomeContent from './components/HomeContent'
 
 const App = () => (
-  <div className="text-3xl mx-auto max-w-6xl">
+  <div className=" flex flex-col justify-between space-y-4 text-3xl mx-auto max-w-6xl">
     <Header />
-    <div className="space-y-3 h-screen">
+    <div className="space-y-3 flex-grow">
       <HomeContent />
     </div>
     <Footer />
