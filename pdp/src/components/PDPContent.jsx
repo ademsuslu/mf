@@ -22,7 +22,7 @@ export default function PDPContent() {
       </div>
       <div>
         <h1>{product.name}</h1>
-        <p>{currency(product.price)}</p>
+        <p>{currency.format(product.price)}</p>
       </div>
     </div>
   )
