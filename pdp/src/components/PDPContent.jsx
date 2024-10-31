@@ -20,9 +20,11 @@ export default function PDPContent() {
       <div>
         <img src={product.image} alt="" />
       </div>
-      <div>
-        <h1>{product.name}</h1>
-        <p>{currency.format(product.price)}</p>
+      <div className="flex">
+        <h1 className="font-bold text-3xl flex-grow">{product.name}</h1>
+        <div className="font-bold text-3xl flex-end">
+          {currency.format(product.price)}
+        </div>
       </div>
     </div>
   )
